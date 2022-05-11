@@ -2,6 +2,7 @@ export const budgetReducer = (budget = 0,action) => {
     switch (action.type){
         case 'SET_BUDGET':
             budget = action.value;
+            console.log(`budget is set to ${budget}`)
             return budget;
         default:
             return budget;
@@ -16,7 +17,7 @@ export const expensesReducer = (expenses = 0,action) => {
             return expenses;
     }
 }
-export const savingsReducer = (savings = 0,action) => {
+export const savingsReducer = (savings=0,action) => {
     switch (action.type){
         case 'SET_SAVINGS':
             savings = action.value;

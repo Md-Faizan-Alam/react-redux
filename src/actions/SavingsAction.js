@@ -1,10 +1,10 @@
-export const setBudget = (value) => {
+export const updateBudget = (value) => {
     return{
         type: 'SET_BUDGET',
         value: value
     }
 }
-export const setExpenses = (value) => {
+export const updateExpenses = (value) => {
     return{
         type: 'SET_EXPENSES',
         value: value
